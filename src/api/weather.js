@@ -30,9 +30,9 @@ const apiCall = async(endpoint) => {
 
 
 export const weatherData = (params) => {
-    apiCall(firstEndpoint(params))
+    return apiCall(firstEndpoint(params))
 }
 
 export const locationData = (params) => {
-    apiCall(locationEndpoint(params))
+    return apiCall(locationEndpoint(params))
 }
